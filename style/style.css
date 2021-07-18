@@ -1,0 +1,76 @@
+/* Declaração de variáveil dentro do 
+elemento root */
+:root {
+  --vermelho: #E50914;
+  --preta: #141414;
+}
+
+/* Sempre zerar a formatação 
+do navegador
+ - Criar uma regra para cada
+ navegador */
+ 
+ /* Reset CSS */
+ * {
+   margin: 0;
+   padding: 0;
+   /* border box determina que o limite
+   de tudo o que está dentro da nossa div
+   seja a borda da caixa. */
+   box-sizing: border-box;
+ }
+
+ /* Elementos Base */
+ /* Configuração do body */
+ body {
+  background: var(--preta);
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+ }
+
+ /* Display flex por padrão joga tudo como 
+ row */
+ header .container {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ header .logo {
+   margin-left: 5px;
+   padding: 5px;
+   color: var(--vermelho);
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   font-size: 40px;
+ }
+
+ header nav a {
+   text-decoration: none;
+   color: #AAA;
+   margin-right: 10px;
+ }
+
+ header nav a:hover {
+   color: #fff;
+ }
+
+ /* Filme Principal */
+ .filme-principal {
+   font-style: 16px;
+   background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0,0, .50)100%), url('/img/capa-house.jpg');
+   height: 400px;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+ }
+
+ .filme-principal .descricao {
+   margin-bottom: 40px;
+ }
+
+ .titulo {
+   font-size: 40px;
+ }
