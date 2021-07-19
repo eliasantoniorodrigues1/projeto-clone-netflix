@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/main.css">
+  <!-- owl css -->
+  <link rel="stylesheet" href="/style/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="/style/owl/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/style/responsive.css">
   <title>NETFLIX CLONE</title>
 </head>
+
 <body>
   <!-- Definição de tag semântica (São divs com significado)-->
   <!-- Cada parte do site é um quadrado contendo elementos -->
@@ -19,7 +25,7 @@
         <a href="#">Início</a>
         <a href="#">Séries</a>
         <a href="#">Filmes</a>
-        <a href="#">Documentários</a>       
+        <a href="#">Documentários</a>
       </nav>
     </div>
   </header>
@@ -30,19 +36,64 @@
       <div class="container">
         <h3 class="titulo">HOUSE OF CARDS</h3>
         <p class="descricao">A 6ª temporada de House of Cards começou a ser exibida em 2 de novembro de 2018.</p>
-      </div>
-      <!-- Toda div por padrão vem com display block -->
-      <div class="botoes">
-        <button role="button" class="botao">
-          ASSISTIR AGORA
-        </button>
-        <button role="button" class="botao">
-          MAIS INFORMAÇÕES
-        </button>
-
+        <!-- Toda div por padrão vem com display block -->
+        <div class="botoes">
+          <button role="button" class="botao">
+            <i class="fas fa-play"></i>
+            ASSISTIR AGORA
+          </button>
+          <button role="button" class="botao">
+            <i class="fas fa-info-circle"></i>
+            MAIS INFORMAÇÕES
+          </button>
+        </div>
       </div>
     </div>
   </main>
 
+    <div class="carrosel-filmes">
+      <div class="owl-carousel owl-theme">
+          <div class="item">
+            <!-- Normalmente as imagens são buscadas do servidor e renderizadas
+            em um objeto json pelo backend -->
+              <img class="box-filme" src="img/mini1.jpg" alt="">
+          </div>
+          <div class="item">
+              <img class="box-filme" src="img/mini2.jpg" alt="">
+          </div>
+          <div class="item">
+              <img class="box-filme" src="img/mini3.jpg" alt="">
+          </div>
+          <div class="item">
+              <img class="box-filme" src="img/mini4.jpg" alt="">
+          </div>
+          <div class="item">
+              <img class="box-filme" src="img/mini5.jpg" alt="">
+          </div>
+          <div class="item">
+              <img class="box-filme" src="img/mini6.jpg" alt="">
+          </div>
+          <div class="item">
+              <img class="box-filme" src="img/mini7.jpg" alt="">
+          </div>
+          <div class="item">
+              <img class="box-filme" src="img/mini8.jpg" alt="">
+          </div>
+          <div class="item">
+              <img class="box-filme" src="img/mini9.jpg" alt="">
+          </div>
+          <div class="item">
+              <img class="box-filme" src="img/mini10.jpg" alt="">
+          </div>
+      </div>
+    </div>
+
+
+
+  <script src="https://kit.fontawesome.com/25f4485ca7.js" crossorigin="anonymous"></script>
+  <script src="/js/owl/jquery.min.js"></script>
+  <script src="/js/owl/owl.carousel.min.js"></script>
+  <script src="js/setup.js"></script>
 </body>
+
 </html>
